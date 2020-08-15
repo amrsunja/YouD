@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="description" content="описание нашей веб странице" />
+    <meta name="keywords" content="web-страница, первая web-страница, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/eel.js"></script>
+    <script src="js/main.js"></script>
+
+    <title>YouD</title>
+  </head>
+  <body>
+    <header>
+        <div class="menu">
+            <div class="title">
+                <h1>YouD</h1>
+            </div>
+            <div class="info">
+                <div class="description">
+                    <p>
+                        YouD to download video from YouTube,<br/> 
+                        but that's not all, he can also<br/>
+                        download audio from video on YouTube<br/>
+                        <br/>
+                        { if you need to download several videos,<br/>
+                        then enter links through a space }<br/>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="download_video">
+            <div class="entry_video">
+
+                <input id="video_down" class="entry" type="text" placeholder=">> Video URL"/><br/>
+                <button id="download_btn" type="submit" onclick="download_video()">Download Video</button>
+                
+            </div>
+        </div>
+        <div class="download_audio">
+            <div class="entry_audio">
+
+                <input id="audio_down" class="entry" type="text" placeholder=">> Video URL"><br/>
+                <button id="download_btn" type="submit" onclick="download_audio()">Download Audio</button>
+
+            </div>
+            <div id="info"></div>
+        </div>
+    </section>
+    
+  </body>
+</html>
